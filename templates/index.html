@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de Potabilidad del Agua</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Predicción de Potabilidad del Agua</h1>
+    <form action="/predict" method="post">
+        <label for="ph">pH:</label>
+        <input type="text" name="ph" required>
+        <br>
+
+        <label for="hardness">Hardness:</label>
+        <input type="text" name="hardness" required>
+        <br>
+
+        <label for="solids">Solids:</label>
+        <input type="text" name="solids" required>
+        <br>
+
+        <label for="chloramines">Chloramines:</label>
+        <input type="text" name="chloramines" required>
+        <br>
+
+        <label for="sulfate">Sulfate:</label>
+        <input type="text" name="sulfate" required>
+        <br>
+
+        <label for="conductivity">Conductivity:</label>
+        <input type="text" name="conductivity" required>
+        <br>
+
+        <label for="organic_carbon">Organic Carbon:</label>
+        <input type="text" name="organic_carbon" required>
+        <br>
+
+        <label for="trihalomethanes">Trihalomethanes:</label>
+        <input type="text" name="trihalomethanes" required>
+        <br>
+
+        <label for="turbidity">Turbidity:</label>
+        <input type="text" name="turbidity" required>
+        <br>
+
+        <input type="submit" value="Predecir">
+    </form>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Predicción</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="result-container">
+        <h1>Resultado de la Predicción</h1>
+        <p class="result-message">{{ mensaje }}</p>
+        <form action="/" method="get">
+            <input type="submit" value="Hacer otra consulta">
+        </form>
+    </div>
+</body>
+</html>
